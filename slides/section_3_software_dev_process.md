@@ -775,7 +775,11 @@ Reminder - this program is using the MVC Architecture:
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": "subslide"} -->
+<<<<<<< HEAD
 ### Breakout: Read and do the exercise
+=======
+### Exercise: Identify Model, View and Controller
+>>>>>>> 39e73043 (Remove 'Merging the Feature In' slide in section 3)
 
 Read the section **Separating Out Responsibilities**.
 
@@ -801,13 +805,38 @@ Time: 10min
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": "subslide"} -->
+## Controller Structure
+The structure of our controller is as follows:
+```python
+# import modules
 
-## Programming Patterns
+def main(args):
+    # perform some actions
 
-* MVC is a programming pattern
-* Others exist - like the visitor pattern
-* Useful for discussion and ideas - not a complete solution
+if __name__ == "__main__":
+    # perform some actions before main()
+    main(args)
+```
+Actions performed by the script are contained within the `main` function. This is called if the `__name__` variable (a special veriable set by the Python interpreter) is `__main__`.  So if our file is run by the Python interpreter on the command line, this condition will be satisfied.
+<!-- #endregion -->
 
+<!-- #region slideshow={"slide_type": "subslide"} -->
+## Passing Command-Line Options to Controller
+To read command line arguments passed into a script, we use `argparse`. To use this, we import it in our controller script, initialise a parser class, and then add arguments which we want to look out for:
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(
+    description='A basic patient inflammation data management system')
+
+parser.add_argument(
+    'infiles',
+    nargs='+',
+    help='Input CSV(s) containing inflammation series for each patient')
+
+args = parser.parse_args()
+```
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": "notes"} -->
