@@ -379,6 +379,10 @@ Follow the instructions under this exercise heading. Read the content above the 
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": "slide"} -->
+## ☕ Break Time ☕
+<!-- #endregion -->
+
+<!-- #region slideshow={"slide_type": "slide"} -->
 ## Preparing Software for Reuse and Release
 <!-- #endregion -->
 
@@ -446,10 +450,6 @@ _Write some notes to discuss at the end of this section!_
   - A README is a great place to start your documentation, but at some point it will outgrow that, and you will need a bigger documentation system. The most popular in Python is Sphinx, which can be used with Markdown or another markup language called ReStructuredText (`.rst` files)
   - For writing documentation, this is another great link that can be added to the shared document: https://documentation.divio.com/
   - For licensing software, make some notes in the shared document about the policy of your institution
-<!-- #endregion -->
-
-<!-- #region slideshow={"slide_type": "slide"} -->
-## ☕ Break Time ☕
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": "slide"} -->
