@@ -47,7 +47,7 @@ git branch --all
 If not, please run these commands:
 
 ```bash
-git remote add upstream git@github.com:ukaea-rse-training/python-intermediate-inflammation.git
+git remote add upstream git@github.com:carpentries-incubator/python-intermediate-inflammation.git
 git fetch upstream
 git checkout upstream/feature-std-dev
 git switch --create feature-std-dev
@@ -402,7 +402,7 @@ Follow the instructions under this exercise heading. Read the content above the 
   - Reusable
   - Replicable
 
-- We want our code to be somewhere on the "reusablility" spectrum.
+- We want our code to be somewhere on the "reusability" spectrum.
   - How reusable your software needs to be depends on your use case.
   - For research software, it must at least be "reproducible"
     - i.e., people can reproduce results you present in your paper.
